@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .box {
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        float: left;
+      }
+      .rectangle-1 .box:nth-child(odd) {
+        background: #F2994A;
+        position: relative;
+        top: 55px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .rectangle-2 .box:nth-child(even) {
+        background: #F2994A;
+        position: relative;
+        top: 55px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .rectangle-1 {
+        width: max-content;
+      }
+      .rectangle-2 {
+        width: max-content;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rectangle-1">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="rectangle-2">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>
